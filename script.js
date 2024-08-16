@@ -1,5 +1,15 @@
-function firstNonRepeatedChar(str) {
- // Write your code here
-}
+
 const input = prompt("Enter a string");
-alert(firstNonRepeatedChar(input)); 
+alert(firstNonRepeatedChar(input));
+let out = prompt("Enter A String");
+function firstNonRepeatingCharacter(out) {
+  for (let i = 0; i < out.length; i++) {
+    let char = out[i];
+    if (out.indexOf(char) == i && out.indexOf(char, i + 1) == -1) {
+      return char;
+    }
+  }
+  return null;
+};
+let ans = firstNonRepeatingCharacter(out);
+alert(ans);
