@@ -1,8 +1,6 @@
-
-const input = prompt("Enter a string");
-alert(firstNonRepeatedChar(input));
+//your JS code here. If required.
+'use strict';
 let out = prompt("Enter A String");
-let ans = firstNonRepeatingCharacter(out);
 function firstNonRepeatingCharacter(out) {
   for (let i = 0; i < out.length; i++) {
     let char = out[i];
@@ -12,5 +10,5 @@ function firstNonRepeatingCharacter(out) {
   }
   return null;
 };
-
+let ans = firstNonRepeatingCharacter(out);
 alert(ans);
